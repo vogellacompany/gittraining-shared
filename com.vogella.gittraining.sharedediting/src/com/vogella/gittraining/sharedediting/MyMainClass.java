@@ -8,7 +8,7 @@ public class MyMainClass {
 		System.out.println("Lars Vogel");
 		System.out.println("Markus Kuppe");
 		System.out.println("Roberto Sampayo");
-		System.out.println("Damián & Juan");
+		System.out.println("JUAN & Damián");
 	}
 
 }
