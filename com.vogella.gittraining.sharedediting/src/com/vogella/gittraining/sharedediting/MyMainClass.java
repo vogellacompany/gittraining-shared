@@ -9,6 +9,7 @@ public class MyMainClass {
 		System.out.println("Markus Kuppe");
 		System.out.println("Roberto Sampayo");
 		System.out.println("JUAN & Damián");
+		System.out.println("Jorge Tello");
 	}
 
 }
