@@ -17,5 +17,6 @@ import org.eclipse.example.calc.Operations;
 public abstract class AbstractOperation implements Operation {
 	AbstractOperation() {
 		Operations.INSTANCE.register(this);
+		System.out.println(this + " registered!");
 	}
 }
