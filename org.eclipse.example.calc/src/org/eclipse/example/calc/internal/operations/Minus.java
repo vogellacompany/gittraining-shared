@@ -11,7 +11,7 @@ package org.eclipse.example.calc.internal.operations;
 import org.eclipse.example.calc.BinaryOperation;
 
 /**
- * Binary minus operation
+ * Binary minus operation New Comment
  */
 public class Minus extends AbstractOperation implements BinaryOperation {
 
