@@ -11,26 +11,17 @@ package org.eclipse.example.calc.internal.operations;
 import org.eclipse.example.calc.BinaryOperation;
 
 /**
-<<<<<<< Upstream, based on d29c17eed24fe0c4ee27449cef7473ded5ddc186
-<<<<<<< Upstream, based on d29c17eed24fe0c4ee27449cef7473ded5ddc186
- * Binary multiply operation
-=======
- * Binary plus operation
->>>>>>> 5ce1189 First Implementation of Multiply
-=======
- * Binary multiply operation
->>>>>>> b6bf6f9 Kommentar korrigiert
+ * Binary Power operation Unsinn
  */
-public class Multiply extends AbstractOperation implements BinaryOperation {
-
-	@Override
-	public float perform(float arg1, float arg2) {
-		return arg1 * arg2;
-	}
+public class Power extends AbstractOperation implements BinaryOperation {
 
 	@Override
 	public String getName() {
-		return "*";
+		return "^";
 	}
-
+	
+	@Override
+	public float perform(float arg1, float arg2) {
+		return (float) Math.pow(arg1, arg2);
+	}
 }
