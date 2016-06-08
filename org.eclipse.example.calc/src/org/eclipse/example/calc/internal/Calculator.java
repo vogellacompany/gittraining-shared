@@ -38,13 +38,14 @@ public class Calculator {
 	}
 
 	private void setupDefaultOperations() {
-		new Equals();
-		new Minus();
-		new Plus();
+		
 		new Square();
 		
 		new Power();
 		new Divide();
+		new Equals();
+		new Minus();
+		new Plus();
 	}
 
 	private void calculate(String cmdName) {
