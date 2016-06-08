@@ -49,7 +49,6 @@ public class Calculator {
 		new Square();
 		
 		new Power();
->>>>>>> refs/heads/Branch1#
 	}
 
 	private void calculate(String cmdName) {
