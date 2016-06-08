@@ -46,6 +46,10 @@ public class Calculator {
 		new Equals();
 		new Minus();
 		new Plus();
+		new Square();
+		
+		new Power();
+>>>>>>> refs/heads/Branch1#
 	}
 
 	private void calculate(String cmdName) {
