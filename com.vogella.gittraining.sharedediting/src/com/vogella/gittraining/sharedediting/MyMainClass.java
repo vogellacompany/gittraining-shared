@@ -11,6 +11,7 @@ public class MyMainClass {
 		System.out.println("Rene Pinnow");
 		System.out.println("Reiner Wollny");
 		System.out.println("Manni Winzen");
+		System.out.println("Burkhard Mallmes");
 		System.out.println("Anonymous");
 		
 	}
