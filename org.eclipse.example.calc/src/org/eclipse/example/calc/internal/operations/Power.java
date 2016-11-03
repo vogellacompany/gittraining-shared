@@ -21,6 +21,7 @@ public class Power extends AbstractOperation implements BinaryOperation {
 	}
 
 	@Override
+	// PoweerNAME
 	public String getName() {
 		return "^";
 	}

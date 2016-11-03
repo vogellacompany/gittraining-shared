@@ -13,6 +13,7 @@ import org.eclipse.example.calc.BinaryOperation;
 /**
  * Binary minus operation
  */
+// THIS IS A MINUS Operation
 public class Minus extends AbstractOperation implements BinaryOperation {
 
 	@Override
