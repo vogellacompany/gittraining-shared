@@ -13,6 +13,7 @@ import org.eclipse.example.calc.BinaryOperation;
 import org.eclipse.example.calc.Operation;
 import org.eclipse.example.calc.Operations;
 import org.eclipse.example.calc.UnaryOperation;
+import org.eclipse.example.calc.internal.operations.Divide;
 import org.eclipse.example.calc.internal.operations.Equals;
 import org.eclipse.example.calc.internal.operations.Minus;
 import org.eclipse.example.calc.internal.operations.Plus;
@@ -40,6 +41,7 @@ public class Calculator {
 		new Minus();
 		new Plus();
 		new Square();
+		new Divide();
 	}
 
 	private void calculate(String cmdName) {
