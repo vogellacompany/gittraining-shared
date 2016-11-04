@@ -8,18 +8,29 @@
  *******************************************************************************/
 package org.eclipse.example.calc.internal.operations;
 
-import org.eclipse.example.calc.Operation;
+import org.eclipse.example.calc.BinaryOperation;
 
 /**
- * Equals operation to trigger binary operations
+<<<<<<< Upstream, based on d29c17eed24fe0c4ee27449cef7473ded5ddc186
+<<<<<<< Upstream, based on d29c17eed24fe0c4ee27449cef7473ded5ddc186
+ * Binary multiply operation
+=======
+ * Binary plus operation
+>>>>>>> 5ce1189 First Implementation of Multiply
+=======
+ * Binary multiply operation
+>>>>>>> b6bf6f9 Kommentar korrigiert
  */
-public class Equals extends AbstractOperation implements Operation {
-	
+public class Multiply extends AbstractOperation implements BinaryOperation {
+
+	@Override
+	public float perform(float arg1, float arg2) {
+		return arg1 * arg2;
+	}
+
 	@Override
 	public String getName() {
-		return "=";
-		
-		
+		return "*";
 	}
 
 }

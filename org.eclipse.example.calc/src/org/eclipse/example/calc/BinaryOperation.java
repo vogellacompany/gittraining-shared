@@ -3,6 +3,8 @@
  *
  * Alles meins!!!
  *******************************************************************************/
+ 
+ /* Okay das ist ein Test hier von Steini und ein neues Feature zum Testen von Shared Training */
 package org.eclipse.example.calc;
 
 /**
