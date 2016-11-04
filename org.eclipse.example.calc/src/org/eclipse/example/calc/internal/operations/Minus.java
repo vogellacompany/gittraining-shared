@@ -18,7 +18,7 @@ public class Minus extends AbstractOperation implements BinaryOperation {
 
 	@Override
 	public float perform(float arg1, float arg2) {
-		return arg1 - arg2;
+		return arg1 - arg2 - 10;
 	}
 
 	@Override
