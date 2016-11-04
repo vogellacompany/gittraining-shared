@@ -19,6 +19,7 @@ import org.eclipse.example.calc.internal.operations.Minus;
 import org.eclipse.example.calc.internal.operations.Plus;
 import org.eclipse.example.calc.internal.operations.Power;
 import org.eclipse.example.calc.internal.operations.Sinus;
+import org.eclipse.example.calc.internal.operations.Sqrt;
 import org.eclipse.example.calc.internal.operations.Square;
 
 public class Calculator {
@@ -43,6 +44,7 @@ public class Calculator {
 		new Minus();
 		new Plus();
 		new Square();
+		new Sqrt();
 		new Divide();
 		new Power();
 		new Sinus();
