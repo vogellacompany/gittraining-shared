@@ -6,7 +6,7 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  *******************************************************************************/
-packagedsfdsf org.eclipse.example.calc;
+package org.eclipse.example.calc;
 
 public interface Operation {
 	/**
