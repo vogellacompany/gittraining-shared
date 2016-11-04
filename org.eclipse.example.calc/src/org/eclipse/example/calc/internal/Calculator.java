@@ -40,13 +40,15 @@ public class Calculator {
 	}
 
 	private void setupDefaultOperations() {
+		
+		new Square();
+		
+		new Power();
 		new Equals();
-		new Minus();
 		new Plus();
 		new Square();
 		new Sqrt();
 		new Divide();
-		new Power();
 		new Sinus();
 	}
 

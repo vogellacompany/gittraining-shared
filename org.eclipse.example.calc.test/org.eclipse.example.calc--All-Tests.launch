@@ -10,7 +10,25 @@
 <stringAttribute key="org.eclipse.jdt.junit.CONTAINER" value="=org.eclipse.example.calc.test/tst"/>
 <booleanAttribute key="org.eclipse.jdt.junit.KEEPRUNNING_ATTR" value="false"/>
 <stringAttribute key="org.eclipse.jdt.junit.TESTNAME" value=""/>
-<stringAttribute key="org.eclipse.jdt.junit.TEST_KIND" value="org.eclipse.jdt.junit.loader.junit4"/>
+<stringAttribute key="org.eclipse.jdt.junit.TEST_KINDFrom a83b13dc2d008a7f881c804612a1f8d6cb60ba20 Thu, 9 Jun 2016 11:00:11 +0200
+From: Alexander Bruns <alexander.bruns@generali.com>
+Date: Wed, 8 Jun 2016 15:47:45 +0200
+Subject: [PATCH] Änderung für Branch
+
+diff --git a/org.eclipse.example.calc/src/org/eclipse/example/calc/internal/operations/Equals.java b/org.eclipse.example.calc/src/org/eclipse/example/calc/internal/operations/Equals.java
+index 4907684..87a8d81 100644
+--- a/org.eclipse.example.calc/src/org/eclipse/example/calc/internal/operations/Equals.java
++++ b/org.eclipse.example.calc/src/org/eclipse/example/calc/internal/operations/Equals.java
+@@ -18,6 +18,8 @@
+ 	@Override
+ 	public String getName() {
+ 		return "=";
++		
++		
+ 	}
+ 
+ }
+" value="org.eclipse.jdt.junit.loader.junit4"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value=""/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="org.eclipse.example.calc.test"/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-ea"/>
