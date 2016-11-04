@@ -4,15 +4,10 @@ public class MyMainClass {
 
 	public static void main(String[] args) {
 		System.out.println("Add your name to the output");
-		System.out.println("Stefan Lay");
-		System.out.println("Lars Vogel");
-		System.out.println("Markus Kuppe");
-		System.out.println("Eleni Chatzistratis ???");
-		System.out.println("Rene Pinnow");
-		System.out.println("Reiner Wollny");
-		System.out.println("Manni Winzen");
-		System.out.println("Burkhard Mallmes");
-		System.out.println("Matthias Roemmelt ???");
+		System.out.println("S L");
+		System.out.println("L V");
+		System.out.println("M K");
+		System.out.println("E C");
 		System.out.println("Anonymous");
 		System.out.println("Werauchimmer");
 		System.out.println("Test");
