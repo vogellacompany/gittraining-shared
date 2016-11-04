@@ -8,22 +8,21 @@
  *******************************************************************************/
 package org.eclipse.example.calc.internal.operations;
 
-import org.eclipse.example.calc.BinaryOperation;
+import org.eclipse.example.calc.UnaryOperation;
 
 /**
- * Binary minus operation
+ * Sqrt operation
  */
-// THIS IS A MINUS Operation
-public class Minus extends AbstractOperation implements BinaryOperation {
-
-	@Override
-	public float perform(float arg1, float arg2) {
-		return arg1 - arg2 - 10;
-	}
+public class Sqrt extends AbstractOperation implements UnaryOperation {
 
 	@Override
 	public String getName() {
-		return "-";
+		return "sqrt";
+	}
+
+	@Override
+	public float perform(float arg1) {
+		return (float)Math.sqrt(arg1);
 	}
 
 }
