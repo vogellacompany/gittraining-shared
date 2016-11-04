@@ -13,11 +13,12 @@ import org.eclipse.example.calc.BinaryOperation;
 import org.eclipse.example.calc.Operation;
 import org.eclipse.example.calc.Operations;
 import org.eclipse.example.calc.UnaryOperation;
-import org.eclipse.example.calc.internal.operations.Divide;
 import org.eclipse.example.calc.internal.operations.Equals;
-import org.eclipse.example.calc.internal.operations.Minus;
 import org.eclipse.example.calc.internal.operations.Plus;
+<<<<<<< HEAD
 import org.eclipse.example.calc.internal.operations.Power;
+=======
+>>>>>>> refs/remotes/origin/master
 import org.eclipse.example.calc.internal.operations.Sinus;
 import org.eclipse.example.calc.internal.operations.Sqrt;
 import org.eclipse.example.calc.internal.operations.Square;
@@ -40,13 +41,15 @@ public class Calculator {
 	}
 
 	private void setupDefaultOperations() {
+<<<<<<< HEAD
+=======
+		
+		new Square();
+>>>>>>> refs/remotes/origin/master
 		new Equals();
-		new Minus();
 		new Plus();
 		new Square();
 		new Sqrt();
-		new Divide();
-		new Power();
 		new Sinus();
 	}
 
