@@ -13,6 +13,7 @@ public class MyMainClass {
 		System.out.println("Manni Winzen");
 		System.out.println("Burkhard Mallmes");
 		System.out.println("Anonymous");
+		System.out.println("Test");
 		
 	}
 
