@@ -5,7 +5,7 @@ first change
 4. Test wegen https://github.com/vogellacompany/gittraining-shared.git
 
 <<<<<<< Upstream, based on origin/master
-2. Änderung
+2. Änderungen
 
 hulliwulli
 
