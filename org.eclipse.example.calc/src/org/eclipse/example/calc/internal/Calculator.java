@@ -41,11 +41,8 @@ public class Calculator {
 	}
 
 	private void setupDefaultOperations() {
-<<<<<<< HEAD
-=======
 		
 		new Square();
->>>>>>> refs/remotes/origin/master
 		new Equals();
 		new Plus();
 		new Square();
