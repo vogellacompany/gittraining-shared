@@ -9,8 +9,8 @@ public class MyMainClass {
 		System.out.println("Sebastian Mautz");
 		System.out.println("Sami Li");
 		System.out.println("Rene Hummel");
-		System.out.println("Reiner Wollny");
-		System.out.println("Manni Winzen");
+		System.out.println("Reiner Rein");
+		System.out.println("Manni Money");
 		System.out.println("Burkhard Mallmes");
 		System.out.println("Matthias Roemmelt");
 		System.out.println("Anonymous");
