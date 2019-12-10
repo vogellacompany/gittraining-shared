@@ -58,7 +58,7 @@ public class CalculatorUI extends JFrame implements TextProvider,
 	}
 
 	private void setupGUI() {
-		setTitle(Calculator.NAME);
+		setTitle(Calculator.NAME2);
 		Container c = getContentPane();
 		c.setLayout(new BorderLayout());
 		setLocationByPlatform(true);
