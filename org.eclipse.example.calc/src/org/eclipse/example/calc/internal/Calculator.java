@@ -15,10 +15,10 @@ import org.eclipse.example.calc.Operations;
 import org.eclipse.example.calc.UnaryOperation;
 import org.eclipse.example.calc.internal.operations.Equals;
 import org.eclipse.example.calc.internal.operations.Plus;
-import org.eclipse.example.calc.internal.operations.Power;
 import org.eclipse.example.calc.internal.operations.Sinus;
 import org.eclipse.example.calc.internal.operations.Sqrt;
 import org.eclipse.example.calc.internal.operations.Square;
+import org.eclipse.example.calc.internal.operations.Zero;
 
 public class Calculator {
 
@@ -32,19 +32,25 @@ public class Calculator {
 
 	public static String NAME2 = "einfacher Rechner";
 
+	public static String NAME = "einfacher Rechner";
+	/*
+	 * TODO Add header comments
+	 */
 	public Calculator(TextProvider textProvider) {
 		this.textProvider = textProvider;
 		setupDefaultOperations();
 	}
 
 	private void setupDefaultOperations() {
-		
+		// some operations...
 		new Square();
 		new Equals();
 		new Plus();
 		new Square();
 		new Sqrt();
 		new Sinus();
+		new Zero();
+		// hier erweitern
 	}
 
 	private void calculate(String cmdName) {
