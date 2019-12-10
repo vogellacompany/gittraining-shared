@@ -47,6 +47,7 @@ public class Calculator {
 		new Square();
 		new Sqrt();
 		new Sinus();
+		// hier erweitern
 	}
 
 	private void calculate(String cmdName) {
