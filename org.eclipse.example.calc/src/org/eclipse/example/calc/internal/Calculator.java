@@ -15,10 +15,10 @@ import org.eclipse.example.calc.Operations;
 import org.eclipse.example.calc.UnaryOperation;
 import org.eclipse.example.calc.internal.operations.Equals;
 import org.eclipse.example.calc.internal.operations.Plus;
-import org.eclipse.example.calc.internal.operations.Power;
 import org.eclipse.example.calc.internal.operations.Sinus;
 import org.eclipse.example.calc.internal.operations.Sqrt;
 import org.eclipse.example.calc.internal.operations.Square;
+import org.eclipse.example.calc.internal.operations.Zero;
 
 public class Calculator {
 
@@ -52,10 +52,14 @@ public class Calculator {
 		new Square();
 		new Sqrt();
 		new Sinus();
+<<<<<<< HEAD
 		//creating conflicts
 		//creating conflicts
 		//creating conflicts
 		//creating conflicts
+=======
+		new Zero();
+>>>>>>> branch 'master' of https://github.com/vogellacompany/gittraining-shared
 		// hier erweitern
 	}
 
