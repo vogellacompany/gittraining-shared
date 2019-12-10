@@ -38,13 +38,17 @@ public class Calculator {
 	}
 
 	private void setupDefaultOperations() {
-		
+		//creating conflicts
 		new Square();
 		new Equals();
 		new Plus();
 		new Square();
 		new Sqrt();
 		new Sinus();
+		//creating conflicts
+		//creating conflicts
+		//creating conflicts
+		//creating conflicts
 	}
 
 	private void calculate(String cmdName) {
