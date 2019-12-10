@@ -42,6 +42,10 @@ public class Calculator {
 		new Square();
 		new Equals();
 		new Plus();
+		//creating conflicts
+				//creating conflicts
+				//creating conflicts
+		//creating conflicts
 		new Square();
 		new Sqrt();
 		new Sinus();
