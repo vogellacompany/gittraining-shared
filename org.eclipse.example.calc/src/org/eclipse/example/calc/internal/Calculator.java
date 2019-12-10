@@ -30,10 +30,10 @@ public class Calculator {
 
 	private float value;
 
-	public static String NAME2 = "einfacher Rechner";
-/*
- * TODO Add header comments
- */
+	public static String NAME = "einfacher Rechner";
+	/*
+	 * TODO Add header comments
+	 */
 	public Calculator(TextProvider textProvider) {
 		this.textProvider = textProvider;
 		setupDefaultOperations();
