@@ -30,8 +30,10 @@ public class Calculator {
 
 	private float value;
 
-	public static String NAME2 = "einfacher Rechner";
-
+	public static String NAME = "einfacher Rechner";
+	/*
+	 * TODO Add header comments
+	 */
 	public Calculator(TextProvider textProvider) {
 		this.textProvider = textProvider;
 		setupDefaultOperations();
@@ -53,6 +55,7 @@ public class Calculator {
 		//creating conflicts
 		//creating conflicts
 		//creating conflicts
+		// hier erweitern
 	}
 
 	private void calculate(String cmdName) {
