@@ -17,6 +17,7 @@ public class MyMainClass {
 		System.out.println("Werauchimmer");
 		System.out.println("Test");
 		System.out.println("someone");
+		System.out.println("Karl Heinz");
 		
 	}
 
