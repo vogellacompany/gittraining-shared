@@ -17,6 +17,7 @@ import org.eclipse.example.calc.internal.operations.Divide;
 import org.eclipse.example.calc.internal.operations.Equals;
 import org.eclipse.example.calc.internal.operations.Minus;
 import org.eclipse.example.calc.internal.operations.Multiply;
+import org.eclipse.example.calc.internal.operations.NheMagicOperation;
 import org.eclipse.example.calc.internal.operations.Plus;
 import org.eclipse.example.calc.internal.operations.Power;
 import org.eclipse.example.calc.internal.operations.Sinus;
@@ -46,45 +47,20 @@ public class Calculator {
 	}
 
 	private void setupDefaultOperations() {
-<<<<<<< HEAD
-		//creating conflicts
-		// some operations...
 		new Square();
-=======
 		new Divide();
->>>>>>> branch 'master' of https://github.com/vogellacompany/gittraining-shared
 		new Equals();
 		new Minus();
 		new Multiply();
 		new Plus();
-<<<<<<< HEAD
-		//creating conflicts
-				//creating conflicts
-				//creating conflicts
-		//creating conflicts
 		new Square();
 		new Sqrt();
-=======
 		new Power();
->>>>>>> branch 'master' of https://github.com/vogellacompany/gittraining-shared
 		new Sinus();
-<<<<<<< HEAD
-<<<<<<< HEAD
-		//creating conflicts
-		//creating conflicts
-		//creating conflicts
-		//creating conflicts
-=======
-=======
 		new Sqrt();
 		new Square();
->>>>>>> branch 'master' of https://github.com/vogellacompany/gittraining-shared
 		new Zero();
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/vogellacompany/gittraining-shared
-		// hier erweitern
-=======
->>>>>>> branch 'master' of https://github.com/vogellacompany/gittraining-shared
+		new NheMagicOperation();
 	}
 
 	private void calculate(String cmdName) {
