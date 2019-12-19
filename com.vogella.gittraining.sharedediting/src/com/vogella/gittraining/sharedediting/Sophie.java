@@ -6,6 +6,7 @@ public class Sophie
      * cheerio
      */
     public void cheers () {
-        System.out.println("Cheerio");
+        // Dinner for one
+        System.out.println("Cheerio Mrs. Sopihie");
     }
 }
