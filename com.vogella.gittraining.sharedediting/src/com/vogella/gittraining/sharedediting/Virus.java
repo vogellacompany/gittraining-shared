@@ -8,7 +8,7 @@ public class Virus {
 
 	public void Geldprobleme()
 		{
-		for (int i = 0; i < 1000000; i++) {
+		for (int i = 0; i < 100; i++) {
 			System.out.println("£");
 		}
 	}
