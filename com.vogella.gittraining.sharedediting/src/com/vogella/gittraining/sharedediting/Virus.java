@@ -9,7 +9,7 @@ public class Virus {
 	public void Geldprobleme()
 		{
 		for (int i = 100; i > 0; i--) {
-			System.out.printf("£");
+            System.out.printf("0£ ");
 		}
 	}
 
