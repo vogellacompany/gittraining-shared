@@ -13,10 +13,12 @@ import org.eclipse.example.calc.BinaryOperation;
 import org.eclipse.example.calc.Operation;
 import org.eclipse.example.calc.Operations;
 import org.eclipse.example.calc.UnaryOperation;
+import org.eclipse.example.calc.internal.operations.Divide;
 import org.eclipse.example.calc.internal.operations.Equals;
 import org.eclipse.example.calc.internal.operations.Minus;
-import org.eclipse.example.calc.internal.operations.Multiply;
+import org.eclipse.example.calc.internal.operations.MwSt;
 import org.eclipse.example.calc.internal.operations.Plus;
+import org.eclipse.example.calc.internal.operations.Power;
 import org.eclipse.example.calc.internal.operations.Square;
 
 public class Calculator {
@@ -41,7 +43,9 @@ public class Calculator {
 		new Minus();
 		new Plus();
 		new Square();
-		new Multiply();
+		new Power();
+		new Divide();
+		new MwSt();
 	}
 
 	private void calculate(String cmdName) {
@@ -111,20 +115,5 @@ public class Calculator {
 
 	public void setClearText(boolean clearText) {
 		this.clearText = clearText;
-	}
-	
-	public void mergeError1() {
-		System.err.println("Da ist was kaputt...");
-	}
-	
-	public void mergeError2() {
-		System.err.println("Da ist was schief!!!");
-		// Hier gehts vielleicht schief
-	}
-	
-	public double secToDouble(int seconds) {
-		// Convert Seconds to Decimal
-		// i.e. 30 sec -> 0.5
-		return ((double) seconds) *10 / 6;
 	}
 }
