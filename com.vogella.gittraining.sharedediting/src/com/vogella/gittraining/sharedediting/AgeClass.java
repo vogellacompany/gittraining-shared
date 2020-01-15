@@ -20,6 +20,7 @@ public class AgeClass {
 		this.age = age;
 	}
 
+//	getName
 	public String getName() {
 		return name;
 	}
