@@ -16,14 +16,10 @@ import org.eclipse.example.calc.UnaryOperation;
 import org.eclipse.example.calc.internal.operations.Divide;
 import org.eclipse.example.calc.internal.operations.Equals;
 import org.eclipse.example.calc.internal.operations.Minus;
-import org.eclipse.example.calc.internal.operations.Multiply;
-import org.eclipse.example.calc.internal.operations.NheMagicOperation;
+import org.eclipse.example.calc.internal.operations.MwSt;
 import org.eclipse.example.calc.internal.operations.Plus;
 import org.eclipse.example.calc.internal.operations.Power;
-import org.eclipse.example.calc.internal.operations.Sinus;
-import org.eclipse.example.calc.internal.operations.Sqrt;
 import org.eclipse.example.calc.internal.operations.Square;
-import org.eclipse.example.calc.internal.operations.Zero;
 
 public class Calculator {
 
@@ -35,32 +31,21 @@ public class Calculator {
 
 	private float value;
 
-	public static String NAME2 = "einfacher Rechner";
+	public static String NAME = "Simple Calculator";
 
-	public static String NAME = "einfacher Rechner";
-	/*
-	 * TODO Add header comments
-	 */
 	public Calculator(TextProvider textProvider) {
 		this.textProvider = textProvider;
 		setupDefaultOperations();
 	}
 
 	private void setupDefaultOperations() {
-		new Square();
-		new Divide();
 		new Equals();
 		new Minus();
-		new Multiply();
 		new Plus();
 		new Square();
-		new Sqrt();
 		new Power();
-		new Sinus();
-		new Sqrt();
-		new Square();
-		new Zero();
-		new NheMagicOperation();
+		new Divide();
+		new MwSt();
 	}
 
 	private void calculate(String cmdName) {
