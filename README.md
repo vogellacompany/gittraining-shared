@@ -9,7 +9,7 @@ p.s. Der Git-Coach hat einen Vogel
 
 
 
-tada ich �ndere sie auch 
+tada ich ändere sie auch 
 
 
 Hello World
