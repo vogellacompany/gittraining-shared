@@ -1,11 +1,12 @@
-gittraining-shared
-==================
-Dieses Projekt braucht eine coolere Beschreibung! One Team one Dream: geile Software.
-
+gittraining-shared:
 https://github.com/vogellacompany/gittraining-shared.git
+
+Dieses Projekt braucht eine coolere Beschreibung! 
+One Team one Dream: geile Software.
+
+
 p.s. Der Git-Coach hat einen Vogel
 
-=======
-Repository for shared pushes
 
-tada ich ändere sie auch 
+
+tada ich ï¿½ndere sie auch 
