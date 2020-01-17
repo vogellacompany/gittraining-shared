@@ -16,7 +16,7 @@
   <prerequisites>
     <maven>3.0</maven>
   </prerequisites>
-
+<!-- Hier wollte ich noch einen Kommentar reinschreiben -->
   <groupId>org.eclipse.example.calc</groupId>
   <artifactId>calc-parent</artifactId>
   <version>0.1.0-SNAPSHOT</version>
