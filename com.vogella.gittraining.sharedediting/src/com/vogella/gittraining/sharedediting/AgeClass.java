@@ -10,6 +10,7 @@ package com.vogella.gittraining.sharedediting;
 public class AgeClass {
 
     // Andi Kommentar
+	// Neuer Kommentar
 	private final String name;
 	
 	private final Integer age;
