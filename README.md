@@ -1,7 +1,11 @@
-gittraining-shared:
-https://github.com/vogellacompany/gittraining-shared.git
+# Readme
 
-Dieses Projekt braucht eine coolere Beschreibung! 
+## Sinnvolle Tipps
+
+* gittraining-shared: https://github.com/vogellacompany/gittraining-shared.git
+* GIT Tutroial im Web:  https://learngitbranching.js.org 
+
+Dieses Projekt braucht eine coolere Beschreibung!
 One Team one Dream: geile Software.
 
 
