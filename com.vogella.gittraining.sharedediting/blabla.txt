@@ -1,13 +1,8 @@
 blabla
 abcd
-<<<<<<< pannitest
 pannisoft
 revert
 egal
 neu
 BloederFCB
-bla
 
-=======
-pannisoft
->>>>>>> 789af87 Revert
