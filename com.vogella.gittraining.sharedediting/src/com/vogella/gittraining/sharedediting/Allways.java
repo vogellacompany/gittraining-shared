@@ -12,4 +12,8 @@ public class Allways
      * Hier könnte Ihre Werbung stehen
      */
 
+    /*
+     * neue Werbung für Sie oder Ihn!
+     */
+
 }
