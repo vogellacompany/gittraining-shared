@@ -9,7 +9,7 @@ public class Allways
     // hier ist Platz für ihr Kommentar
 
     /*
-     * 
+     * Hier könnte Ihre Werbung stehen
      */
 
 }
