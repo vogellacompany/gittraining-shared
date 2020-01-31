@@ -8,4 +8,5 @@ package com.vogella.gittraining.sharedediting;
 public class SuperiorClass
 {
 
+    // eine Methode wird in Superior nicht benötigt
 }
