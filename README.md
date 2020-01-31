@@ -8,7 +8,6 @@
 Dieses Projekt braucht eine coolere Beschreibung!
 One Team one Dream: geile Software.
 
-## Todos 
 
 p.s. Der Git-Coach hat einen Vogel
 

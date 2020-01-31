@@ -12,6 +12,4 @@ public class SuperiorClass
 {
 
     // eine Methode wird in Superior nicht benötigt
-
-    // letzte Möglichkeit:-)
 }
