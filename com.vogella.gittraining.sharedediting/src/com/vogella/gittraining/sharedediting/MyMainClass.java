@@ -18,7 +18,7 @@ public class MyMainClass {
 		System.out.println("Test");
 		System.out.println("someone");
 		System.out.println("Karl Heinz");
-		
+		System.out.println("whatever");
 	}
 
 }
