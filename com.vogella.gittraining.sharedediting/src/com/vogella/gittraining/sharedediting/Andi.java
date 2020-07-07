@@ -9,6 +9,8 @@ package com.vogella.gittraining.sharedediting;
  */
 public class Andi {
 
-// muss noch implementiert werden	
+  // muss noch implementiert werden	
 	// da gabs wohl schon nen Andi
+  // passt schon
+
 }
