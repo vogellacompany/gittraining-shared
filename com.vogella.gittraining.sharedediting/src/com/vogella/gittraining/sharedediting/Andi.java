@@ -12,5 +12,8 @@ public class Andi {
   // muss noch implementiert werden	
 	// da gabs wohl schon nen Andi
   // passt schon
-zshjasioghaiog
+
+	ich amach
+	auch noch was
+
 }
