@@ -10,5 +10,5 @@ package com.vogella.gittraining.sharedediting;
 public class Andi {
 
 // muss noch implementiert werden	
-    // passt schon
+    // passt schon, 99 Flaschen Bier an der Wand
 }
