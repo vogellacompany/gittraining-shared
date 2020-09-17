@@ -24,3 +24,5 @@ Wer das liest kann lesen. Und hat den git pull Befehl gelernt.
 
 
 Ok.
+
+Das ist ja mal eine sehr hilfreiche Readme :D
