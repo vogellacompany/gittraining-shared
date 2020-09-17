@@ -1,6 +1,7 @@
 package com.vogella.gittraining.sharedediting;
 
 // Kommentar
+// Noch ein Kommentar
 public class Cheers {
 
 	
