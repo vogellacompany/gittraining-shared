@@ -24,7 +24,7 @@ public class AgeClass {
 
 //	getName
 	public String getName() {
-		return name;
+		return name + " - Suffix ";
 	}
 
 	public Integer getAge() {
