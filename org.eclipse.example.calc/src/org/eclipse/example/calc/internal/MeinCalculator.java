@@ -21,7 +21,7 @@ import org.eclipse.example.calc.internal.operations.Plus;
 import org.eclipse.example.calc.internal.operations.Power;
 import org.eclipse.example.calc.internal.operations.Square;
 
-public class Calculator {
+public class MeinCalculator {
 
 	private TextProvider textProvider;
 
@@ -34,7 +34,7 @@ public class Calculator {
 	public static String NAME = "Simple Calculator";
 
 	public Calculator(TextProvider textProvider) {
-	    // Ein Kommentar von mwill-git
+	    // Ein Kommentar von mwill-git für Mein Calculator
 		this.textProvider = textProvider;
 		setupDefaultOperations();
 	}
