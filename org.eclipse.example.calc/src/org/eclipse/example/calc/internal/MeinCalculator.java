@@ -33,7 +33,7 @@ public class MeinCalculator {
 
 	public static String NAME = "Simple Calculator";
 
-	public Calculator(TextProvider textProvider) {
+	public MeinCalculator(TextProvider textProvider) {
 	    // Ein Kommentar von mwill-git für Mein Calculator
 		this.textProvider = textProvider;
 		setupDefaultOperations();
