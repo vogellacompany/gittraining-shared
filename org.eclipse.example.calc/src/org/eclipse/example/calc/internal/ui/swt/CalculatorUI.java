@@ -29,12 +29,7 @@ import org.eclipse.swt.widgets.Text;
  */
 public class CalculatorUI implements TextProvider, SelectionListener {
 
-<<<<<<< Upstream, based on branch 'master' of https://github.com/vogellacompany/gittraining-shared.git
-=======
     //WhatEver
-	private static final long serialVersionUID = 1L;
-
->>>>>>> 312de6a push
 	private Calculator calculator;
 
 	private Shell shell;
