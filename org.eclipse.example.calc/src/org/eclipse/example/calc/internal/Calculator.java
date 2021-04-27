@@ -36,13 +36,13 @@ public class Calculator {
 	}
 
 	private void setupDefaultOperations() {
-	    // Nur ein Kommentart
-	    //Compilefehler entfernt. 
-	    //FIXME: Suche die fehlenden Funktionen
 		new Equals();
 		new Minus();
 		new Plus();
 		new Square();
+		//What??
+//		new Multiply();
+//        new Divide();
 	}
 
 	private void calculate(String cmdName) {
