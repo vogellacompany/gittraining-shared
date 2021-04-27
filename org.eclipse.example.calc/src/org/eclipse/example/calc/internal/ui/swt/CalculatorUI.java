@@ -29,8 +29,6 @@ import org.eclipse.swt.widgets.Text;
  */
 public class CalculatorUI implements TextProvider, SelectionListener {
 
-	private static final long serialVersionUID = 1L;
-
 	private Calculator calculator;
 
 	private Shell shell;
