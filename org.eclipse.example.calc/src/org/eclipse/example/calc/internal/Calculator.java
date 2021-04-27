@@ -13,12 +13,9 @@ import org.eclipse.example.calc.BinaryOperation;
 import org.eclipse.example.calc.Operation;
 import org.eclipse.example.calc.Operations;
 import org.eclipse.example.calc.UnaryOperation;
-import org.eclipse.example.calc.internal.operations.Divide;
 import org.eclipse.example.calc.internal.operations.Equals;
 import org.eclipse.example.calc.internal.operations.Minus;
-import org.eclipse.example.calc.internal.operations.Multiply;
 import org.eclipse.example.calc.internal.operations.Plus;
-import org.eclipse.example.calc.internal.operations.Power;
 import org.eclipse.example.calc.internal.operations.Square;
 
 public class Calculator {
@@ -34,19 +31,18 @@ public class Calculator {
 	public static String NAME = "Simple Calculator";
 
 	public Calculator(TextProvider textProvider) {
-		this.textProv ider = textProvider;
+		this.textProvider = textProvider;
 		setupDefaultOperations();
 	}
 
 	private void setupDefaultOperations() {
 	    // Nur ein Kommentart
+	    //Compilefehler entfernt. 
+	    //FIXME: Suche die fehlenden Funktionen
 		new Equals();
 		new Minus();
 		new Plus();
 		new Square();
-		new Multiply();
-		new Power();
-		new Divide();
 	}
 
 	private void calculate(String cmdName) {
