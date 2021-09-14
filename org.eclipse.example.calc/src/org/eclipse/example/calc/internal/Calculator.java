@@ -30,20 +30,23 @@ public class Calculator {
 
 	public static String NAME = "Simple Calculator";
 
+	/**
+	 * Konstruktor #2
+	 */
 	public Calculator(TextProvider textProvider) {
 		this.textProvider = textProvider;
 		setupDefaultOperations();
 	}
 
 	private void setupDefaultOperations() {
-
+		// Ein weiterer Kommentar :) von Fidunico
 	    // Nur ein Kommentart
 		new Equals();
 		new Minus();
 		new Plus();
 		new Square();
 		//What??
-//		new Multiply();
+		new Multiply();
         new Divide();
 	}
 
