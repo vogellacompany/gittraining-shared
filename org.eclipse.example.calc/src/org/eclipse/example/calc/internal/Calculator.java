@@ -30,6 +30,9 @@ public class Calculator {
 
 	public static String NAME = "Simple Calculator";
 
+	/**
+	 * Konstruktor 
+	 */
 	public Calculator(TextProvider textProvider) {
 		this.textProvider = textProvider;
 		setupDefaultOperations();
@@ -43,8 +46,8 @@ public class Calculator {
 		new Plus();
 		new Square();
 		//What??
-//		new Multiply();
-//        new Divide();
+		new Multiply();
+        new Divide();
 	}
 
 	private void calculate(String cmdName) {
