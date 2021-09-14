@@ -31,7 +31,7 @@ public class Calculator {
 	public static String NAME = "Simple Calculator";
 
 	/**
-	 * Konstruktor 
+	 * Konstruktor #2
 	 */
 	public Calculator(TextProvider textProvider) {
 		this.textProvider = textProvider;
