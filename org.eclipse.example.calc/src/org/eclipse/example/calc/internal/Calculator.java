@@ -17,6 +17,7 @@ import org.eclipse.example.calc.internal.operations.Equals;
 import org.eclipse.example.calc.internal.operations.Minus;
 import org.eclipse.example.calc.internal.operations.Plus;
 import org.eclipse.example.calc.internal.operations.Square;
+import org.eclipse.example.calc.internal.operations.DoubleMinus;
 
 public class Calculator {
 
@@ -47,6 +48,7 @@ public class Calculator {
 		new Square();
 		//What??
 		new Multiply();
+		new DoubleMinus();
         new Divide();
 	}
 
