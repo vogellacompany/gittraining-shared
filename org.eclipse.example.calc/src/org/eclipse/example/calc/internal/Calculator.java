@@ -28,7 +28,7 @@ public class Calculator {
 
 	private float value;
 
-	public static String NAME = "Simple Calculator";
+	public static String NAME = "MWP Calculator";
 
 	/**
 	 * Konstruktor #2
