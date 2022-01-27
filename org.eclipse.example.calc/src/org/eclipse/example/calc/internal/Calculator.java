@@ -42,15 +42,13 @@ public class Calculator {
 	private void setupDefaultOperations() {
 		// Ein weiterer Kommentar :) von Fidunico
 	    // Nur ein Kommentart
+        // moin moin
 	    // weiterer Kommentar
 		new Equals();
 		new Minus();
 		new Plus();
 		new Square();
 		new Increment();
-		//What??
-		new Multiply();
-        new Divide();
 	}
 
 	private void calculate(String cmdName) {
