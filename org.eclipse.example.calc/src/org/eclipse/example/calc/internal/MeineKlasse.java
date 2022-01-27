@@ -5,3 +5,4 @@ public class MeineKlasse
     //die macht noch nichts...
 
 }
+//was soll die machen ?
