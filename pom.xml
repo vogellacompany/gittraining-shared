@@ -17,7 +17,7 @@
     <maven>3.0</maven>
   </prerequisites>
 
-  <groupId>org.eclipse.example.calc</groupId>
+  <groupId>org.eclipse.example.calc.shared</groupId>
   <artifactId>calc-parent</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
@@ -50,42 +50,30 @@
 
   <properties>
     <calc-version>0.1.0-SNAPSHOT</calc-version>
-    <tycho-version>0.22.0</tycho-version>
-    <junit-version>4.8.1</junit-version>
+    <tycho-version>2.6.0</tycho-version>
+    <junit-version>4.16</junit-version>
   </properties>
 
   <profiles>
     <profile>
-      <id>platform-mars</id>
+      <id>platform</id>
       <activation>
         <activeByDefault>true</activeByDefault>
         <property>
           <name>platform-version-name</name>
-          <value>mars</value>
+          <value>2021-12</value>
         </property>
       </activation>
       <properties>
-        <eclipse-site>http://download.eclipse.org/releases/mars</eclipse-site>
-      </properties>
-    </profile>
-    <profile>
-      <id>platform-neon</id>
-      <activation>
-        <property>
-          <name>platform-version-name</name>
-          <value>neon</value>
-        </property>
-      </activation>
-      <properties>
-        <eclipse-site>http://download.eclipse.org/releases/helios</eclipse-site>
+        <eclipse-site>http://download.eclipse.org/releases/2021-12</eclipse-site>
       </properties>
     </profile>
  
   </profiles>
 
   <modules>
-    <module>org.eclipse.example.calc</module>
-    <module>org.eclipse.example.calc.test</module>
+    <module>org.eclipse.example.calc.shared</module>
+    <module>org.eclipse.example.calc.shared.test</module>
   </modules>
 
   <repositories>
@@ -125,17 +113,7 @@
             <environment>
               <os>linux</os>
               <ws>gtk</ws>
-              <arch>x86</arch>
-            </environment>
-            <environment>
-              <os>linux</os>
-              <ws>gtk</ws>
               <arch>x86_64</arch>
-            </environment>
-            <environment>
-              <os>win32</os>
-              <ws>win32</ws>
-              <arch>x86</arch>
             </environment>
             <environment>
               <os>win32</os>
@@ -186,51 +164,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-antrun-plugin</artifactId>
           <version>1.7</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>findbugs-maven-plugin</artifactId>
-          <version>2.3.2</version>
-          <configuration>
-            <findbugsXmlOutput>true</findbugsXmlOutput>
-            <failOnError>false</failOnError>
-          </configuration>
-          <executions>
-            <execution>
-              <goals>
-                <goal>check</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-pmd-plugin</artifactId>
-          <version>2.6</version>
-          <configuration>
-            <sourceEncoding>utf-8</sourceEncoding>
-            <minimumTokens>100</minimumTokens>
-            <targetJdk>1.5</targetJdk>
-            <format>xml</format>
-            <failOnViolation>false</failOnViolation>
-          </configuration>
-          <executions>
-            <execution>
-              <goals>
-                <goal>cpd-check</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-assembly-plugin</artifactId>
-          <version>2.2.1</version>
-        </plugin>
-        <plugin>
-          <groupId>org.eclipse.dash.maven</groupId>
-          <artifactId>eclipse-signing-maven-plugin</artifactId>
-          <version>1.0.5</version>
         </plugin>
       </plugins>
     </pluginManagement>

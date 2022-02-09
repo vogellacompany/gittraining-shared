@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Calculator
-Bundle-SymbolicName: org.eclipse.example.calc
+Bundle-SymbolicName: org.eclipse.example.calc.shared
 Bundle-Version: 0.1.0.qualifier
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Export-Package: org.eclipse.example.calc;version="0.1.0",
  org.eclipse.example.calc.internal;version="0.1.0";x-internal:=true,
  org.eclipse.example.calc.internal.operations;version="0.1.0";x-internal:=true,
