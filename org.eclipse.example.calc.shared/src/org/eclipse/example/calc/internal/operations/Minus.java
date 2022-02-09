@@ -22,7 +22,7 @@ public class Minus extends AbstractOperation implements BinaryOperation {
 
 	@Override
 	public String getName() {
-	    // BK meine dritte Änderung
+	    // BK meine vierte Änderung
 		return "-";
 	}
 
