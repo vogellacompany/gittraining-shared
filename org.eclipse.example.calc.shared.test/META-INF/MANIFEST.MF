@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Calculator Test
-Bundle-SymbolicName: org.eclipse.example.calc.test
+Bundle-SymbolicName: org.eclipse.example.calc.shared.test
 Bundle-Version: 0.1.0.qualifier
-Fragment-Host: org.eclipse.example.calc;bundle-version="[0.1.0,0.2.0)"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Fragment-Host: org.eclipse.example.calc.shared;bundle-version="[0.1.0,0.2.0)"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Require-Bundle: org.junit
 Import-Package: org.eclipse.example.calc.internal;version="[0.1.0,0.2.0)"
 
