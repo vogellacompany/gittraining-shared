@@ -22,6 +22,7 @@ public class Plus extends AbstractOperation implements BinaryOperation {
 
 	@Override
 	public String getName() {
+	    // BK Comment Test
 		return "+";
 	}
 
