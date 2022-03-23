@@ -21,6 +21,8 @@ public class Operations {
 	private final Map<String, Operation> commands = new HashMap<String, Operation>();
 
 	public void register(Operation op) {
+	    
+	    //neuer Kommentar von Sandra
 		assert (commands.get(op.getName()) == null);
 		commands.put(op.getName(), op);
 	}
