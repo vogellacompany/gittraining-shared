@@ -37,6 +37,7 @@ public class Calculator {
 		setupDefaultOperations();
 	}
 
+	//EIn Kommentar von xxavarlonxx
 	private void setupDefaultOperations() {
 		new Equals();
 		new Minus();
@@ -44,6 +45,8 @@ public class Calculator {
 		new Square();
 		new Cube();
 		new StandBy();
+		// 1. Kommentar von W. Bauer
+		// da fehlen doch welche?
 	}
 
 	private void calculate(String cmdName) {
