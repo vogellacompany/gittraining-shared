@@ -47,6 +47,7 @@ public class Calculator {
 		new StandBy();
 		// 1. Kommentar von W. Bauer
 		// da fehlen doch welche?
+		// New comment
 	}
 
 	private void calculate(String cmdName) {
