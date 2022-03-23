@@ -4,3 +4,8 @@ public class NeueSuperKlasse
 {
 
 }
+
+public class NeueSuperKlasse2
+{
+
+}
