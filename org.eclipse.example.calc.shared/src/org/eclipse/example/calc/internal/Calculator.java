@@ -44,6 +44,7 @@ public class Calculator {
 		new Square();
 		new Cube();
 		new StandBy();
+		// da fehlen doch welche?
 	}
 
 	private void calculate(String cmdName) {
