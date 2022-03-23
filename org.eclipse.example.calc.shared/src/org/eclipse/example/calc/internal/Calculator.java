@@ -44,6 +44,7 @@ public class Calculator {
 		new Square();
 		new Cube();
 		new StandBy();
+		// 1. Kommentar von W. Bauer
 	}
 
 	private void calculate(String cmdName) {
