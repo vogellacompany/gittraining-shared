@@ -46,6 +46,7 @@ public class Calculator {
 		new StandBy();
 		// 1. Kommentar von W. Bauer
 		// da fehlen doch welche?
+		// neue Änderung im wbfeature-Branch
 	}
 
 	private void calculate(String cmdName) {
