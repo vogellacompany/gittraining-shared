@@ -45,6 +45,7 @@ public class Calculator {
 		new Cube();
 		new StandBy();
 		// 1. Kommentar von W. Bauer
+		// da fehlen doch welche?
 	}
 
 	private void calculate(String cmdName) {
