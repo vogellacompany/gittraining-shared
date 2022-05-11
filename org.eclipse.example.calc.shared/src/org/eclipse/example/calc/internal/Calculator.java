@@ -52,6 +52,7 @@ public class Calculator {
 		// da fehlen doch welche?
 		// neue Änderung im wbfeature-Branch
 		// New comment
+		// Noch ein Kommentar
 	}
 
 	private void calculate(String cmdName) {
