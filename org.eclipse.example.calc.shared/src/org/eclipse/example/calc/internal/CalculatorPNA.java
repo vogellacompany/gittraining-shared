@@ -15,13 +15,12 @@ import org.eclipse.example.calc.Operations;
 import org.eclipse.example.calc.UnaryOperation;
 import org.eclipse.example.calc.internal.operations.Cube;
 import org.eclipse.example.calc.internal.operations.Equals;
-import org.eclipse.example.calc.internal.operations.Log;
 import org.eclipse.example.calc.internal.operations.Minus;
 import org.eclipse.example.calc.internal.operations.Plus;
 import org.eclipse.example.calc.internal.operations.Square;
 import org.eclipse.example.calc.internal.operations.StandBy;
 
-public class Calculator {
+public class CalculatorPNA {
 
 	private TextProvider textProvider;
 
@@ -33,12 +32,12 @@ public class Calculator {
 
 	public static String NAME = "Simple Calculator";
 
-	public Calculator(TextProvider textProvider) {
+	public CalculatorPNA(TextProvider textProvider) {
 		this.textProvider = textProvider;
 		setupDefaultOperations();
 	}
 
-	//EIn Kommentar von xxavarlonxx
+	// alten Kommentar gelöscht 
 	// Noch ein Kommentar - PNA
 	private void setupDefaultOperations() {
 		new Equals();
@@ -47,7 +46,6 @@ public class Calculator {
 		new Square();
 		new Cube();
 		new StandBy();
-		new Log();
 		// 1. Kommentar von W. Bauer
 		// da fehlen doch welche?
 		// neue Änderung im wbfeature-Branch
