@@ -18,6 +18,7 @@ import org.eclipse.example.calc.internal.operations.Equals;
 import org.eclipse.example.calc.internal.operations.Log;
 import org.eclipse.example.calc.internal.operations.Minus;
 import org.eclipse.example.calc.internal.operations.Plus;
+import org.eclipse.example.calc.internal.operations.Sin;
 import org.eclipse.example.calc.internal.operations.Square;
 import org.eclipse.example.calc.internal.operations.StandBy;
 
@@ -48,6 +49,8 @@ public class Calculator {
 		new Cube();
 		new StandBy();
 		new Log();
+		new Sin();
+		
 		// 1. Kommentar von W. Bauer
 		// da fehlen doch welche?
 		// neue Änderung im wbfeature-Branch
