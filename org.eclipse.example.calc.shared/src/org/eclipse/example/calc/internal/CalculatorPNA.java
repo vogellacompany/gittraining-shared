@@ -20,7 +20,7 @@ import org.eclipse.example.calc.internal.operations.Plus;
 import org.eclipse.example.calc.internal.operations.Square;
 import org.eclipse.example.calc.internal.operations.StandBy;
 
-public class Calculator {
+public class CalculatorPNA {
 
 	private TextProvider textProvider;
 
@@ -32,12 +32,12 @@ public class Calculator {
 
 	public static String NAME = "Simple Calculator";
 
-	public Calculator(TextProvider textProvider) {
+	public CalculatorPNA(TextProvider textProvider) {
 		this.textProvider = textProvider;
 		setupDefaultOperations();
 	}
 
-	//EIn Kommentar von xxavarlonxx
+	// alten Kommentar gelöscht 
 	// Noch ein Kommentar - PNA
 	private void setupDefaultOperations() {
 		new Equals();
