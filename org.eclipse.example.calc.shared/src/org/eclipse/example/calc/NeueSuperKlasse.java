@@ -5,7 +5,8 @@ public class NeueSuperKlasse
 
 }
 
-public class NeueSuperKlasse2
-{
-
-}
+// Auskommentiert wg. Compilefehler.
+//public class NeueSuperKlasse2
+//{
+//
+//}
