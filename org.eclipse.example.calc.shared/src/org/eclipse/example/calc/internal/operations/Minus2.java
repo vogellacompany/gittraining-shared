@@ -8,16 +8,21 @@
  *******************************************************************************/
 package org.eclipse.example.calc.internal.operations;
 
-import org.eclipse.example.calc.Operation;
+import org.eclipse.example.calc.BinaryOperation;
 
 /**
- * Equals operation to trigger binary operations
+ * Binary minus operation
  */
-public class Equals extends AbstractOperation implements Operation {
-	
+public class Minus2 extends AbstractOperation implements BinaryOperation {
+
+	@Override
+	public float perform(float arg1, float arg2) {
+		return arg1 - arg2 - 2;
+	}
+
 	@Override
 	public String getName() {
-		return "==";
+		return "-2";
 	}
 
 }
