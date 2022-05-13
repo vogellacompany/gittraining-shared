@@ -5,6 +5,8 @@
  *******************************************************************************/
 package org.eclipse.example.calc;
 
+// another interface 
+
 /**d
  * Binary operation interface
  */
