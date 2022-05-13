@@ -13,4 +13,6 @@ public interface Operation {
 	 * @return name of the operation
 	 */
 	public String getName();
+	
+	//TODO: wird das Interface noch benötigt
 }
