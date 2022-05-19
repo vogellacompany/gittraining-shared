@@ -24,5 +24,6 @@ public class Plus extends AbstractOperation implements BinaryOperation {
 	public String getName() {
 		return "+";
 	}
+	// Ob die Operation den stimmt !
 
 }
