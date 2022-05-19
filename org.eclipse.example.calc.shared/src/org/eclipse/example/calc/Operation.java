@@ -10,7 +10,7 @@ package org.eclipse.example.calc;
 
 public interface Operation {
 	/**
-	 * @return name of the operation
+	 * @return name of the operation xgadtkt
 	 */
 	public String getName();
 }
