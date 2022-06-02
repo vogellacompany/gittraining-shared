@@ -29,8 +29,16 @@ import org.eclipse.example.calc.internal.TextProvider;
 /*
  * A simple calculator featuring a Swing UI.
  */
-public class CalculatorUI extends JFrame implements TextProvider,
-		ActionListener {
+
+/**
+ * 
+ * 
+ * @deprecated This does not look good. Implement with some modern GUI
+ *             framework.
+ */
+@Deprecated
+
+public class CalculatorUI extends JFrame implements TextProvider, ActionListener {
 	private static final long serialVersionUID = 1L;
 
 	private Calculator calculator;
