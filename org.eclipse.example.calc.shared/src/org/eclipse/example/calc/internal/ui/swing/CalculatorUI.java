@@ -62,6 +62,7 @@ public class CalculatorUI extends JFrame implements TextProvider, ActionListener
 	public CalculatorUI() {
 		calculator = new Calculator(this);
 		setupGUI();
+		System.out.println("42");
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 	}
 
