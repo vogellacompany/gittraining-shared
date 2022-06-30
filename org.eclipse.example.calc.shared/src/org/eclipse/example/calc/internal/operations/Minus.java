@@ -23,7 +23,7 @@ public class Minus extends AbstractOperation implements BinaryOperation {
 	@Override
 	public String getName() {
 		// Zurückgeben des Rechenzeichens
-		return "-";
+		return "minus";
 	}
 
 }
