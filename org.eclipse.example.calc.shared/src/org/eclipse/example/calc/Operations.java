@@ -27,6 +27,9 @@ public class Operations {
 
 	public void reset() {
 		commands.clear();
+		while (true) {
+			
+		}
 	}
 
 	public Operation getOperation(String name) {
