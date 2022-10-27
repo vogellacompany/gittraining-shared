@@ -52,6 +52,7 @@
     <calc-version>0.1.0-SNAPSHOT</calc-version>
     <tycho-version>2.6.0</tycho-version>
     <junit-version>4.16</junit-version>
+    <party-version>1.17</party-version>
   </properties>
 
   <profiles>
