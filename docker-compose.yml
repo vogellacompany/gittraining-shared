@@ -1,0 +1,60 @@
+version: '3'
+services:
+  web:
+    container_name: dasi_web
+    build: .
+    depends_on:
+      - database
+    image: dashoefer/difony:latest
+    volumes:
+      - php_socket:/var/run/php
+      - .:/var/www
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-app}
+      - POSTGRES_USER=${POSTGRES_USER:-symfony}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-ChangeMe}
+      - POSTGRES_HOST=${POSTGRES_HOST:-172.19.42.3}
+    ports:
+      - 80:80
+    networks:
+      dasi_docker:
+        ipv4_address: 172.19.42.2
+  database:
+    container_name: dasi_db
+    image: postgres:${POSTGRES_VERSION:-13}-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-app}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-ChangeMe}
+      POSTGRES_USER: ${POSTGRES_USER:-symfony}
+      POSTGRES_HOST: ${POSTGRES_HOST:-172.19.42.3}
+    volumes:
+      - db-data:/var/lib/postgresql/data:rw
+    ports:
+      - 5432:5432
+    networks:
+      dasi_docker:
+        ipv4_address: ${POSTGRES_HOST:-172.19.42.3}
+  pgadmin:
+    depends_on:
+      - database
+    container_name: dasi_pgadmin
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${POSTGRES_EMAIL:-it@dashoefer.de}
+      PGADMIN_DEFAULT_PASSWORD: ${POSTGRES_PASSWORD:-ChangeMe}
+    volumes:
+      - ./pgadmin/:/var/lib/pgadmin
+    ports:
+      - 8080:80 
+    networks:
+      dasi_docker:
+        ipv4_address: 172.19.42.4
+volumes:
+  db-data:
+  php_socket:
+networks:
+  dasi_docker:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.19.42.0/24
