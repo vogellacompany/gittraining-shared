@@ -13,7 +13,7 @@ import org.eclipse.example.calc.UnaryOperation;
 /**
  * Square operation
  */
-public class Square extends AbstractOperation implements UnaryOperation {
+public class Square2 extends AbstractOperation implements UnaryOperation {
 
 	@Override
 	public String getName() {
