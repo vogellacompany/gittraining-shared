@@ -26,7 +26,8 @@ public class OperationsTest {
 
 	@Before
 	public void setUp() throws Exception {
-		new Plus();
+		//Removing plus function
+		//new Plus();
 		new Minus();
 		new Equals();
 		square = new Square();
