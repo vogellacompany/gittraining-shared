@@ -19,6 +19,7 @@ import org.eclipse.example.calc.internal.operations.Minus;
 import org.eclipse.example.calc.internal.operations.Plus;
 import org.eclipse.example.calc.internal.operations.Square;
 import org.eclipse.example.calc.internal.operations.Square2;
+import org.eclipse.example.calc.internal.operations.SquareRoot;
 
 public class Calculator {
 
@@ -44,6 +45,7 @@ public class Calculator {
 		new Plus();
 		new Square();
 		new GerneEtwasMehr();
+		new SquareRoot();
 	}
 
 	private void calculate(String cmdName) {
