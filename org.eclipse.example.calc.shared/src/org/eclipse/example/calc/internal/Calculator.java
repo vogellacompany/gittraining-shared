@@ -38,11 +38,11 @@ public class Calculator {
 	}
 
 	private void setupDefaultOperations() {
-		// Commented out Square
+		// Re-introduced the Square function
 		new Equals();
 		new Minus();
 		new Plus();
-		//new Square();
+		new Square();
 		new GerneEtwasMehr();
 	}
 
