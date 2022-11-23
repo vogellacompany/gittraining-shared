@@ -13,105 +13,106 @@ import org.eclipse.example.calc.BinaryOperation;
 import org.eclipse.example.calc.Operation;
 import org.eclipse.example.calc.Operations;
 import org.eclipse.example.calc.UnaryOperation;
+import org.eclipse.example.calc.internal.operations.Divide;
 import org.eclipse.example.calc.internal.operations.Equals;
 import org.eclipse.example.calc.internal.operations.GerneEtwasMehr;
 import org.eclipse.example.calc.internal.operations.Minus;
 import org.eclipse.example.calc.internal.operations.Plus;
 import org.eclipse.example.calc.internal.operations.Square;
-import org.eclipse.example.calc.internal.operations.Square2;
 
 public class Calculator {
 
-	private TextProvider textProvider;
+    private TextProvider textProvider;
 
-	private String cmd;
+    private String cmd;
 
-	private boolean clearText;
+    private boolean clearText;
 
-	private float value;
+    private float value;
 
-	public static String NAME = "Simple Calculator";
+    public static String NAME = "Simple Calculator";
 
-	public Calculator(TextProvider textProvider) {
-		this.textProvider = textProvider;
-		setupDefaultOperations();
-	}
+    public Calculator(TextProvider textProvider) {
+        this.textProvider = textProvider;
+        setupDefaultOperations();
+    }
 
-	private void setupDefaultOperations() {
-		// new Comment
-		new Equals();
-		new Minus();
-		new Plus();
-		new Square();
-		new GerneEtwasMehr();
-	}
+    private void setupDefaultOperations() {
+        // new Comment
+        new Equals();
+        new Minus();
+        new Plus();
+        new Divide();
+        new Square();
+        new GerneEtwasMehr();
+    }
 
-	private void calculate(String cmdName) {
-		float curValue;
-		float newValue = 0;
+    private void calculate(String cmdName) {
+        float curValue;
+        float newValue = 0;
 
-		// get current value of display
-		curValue = Float.parseFloat(textProvider.getDisplayText());
+        // get current value of display
+        curValue = Float.parseFloat(textProvider.getDisplayText());
 
-		Operation currentOp = Operations.INSTANCE.getOperation(cmdName);
-		if ((currentOp instanceof BinaryOperation) && (cmd == null)) {
-			// if last clicked operation was binary and there is no saved
-			// operation, store it
-			cmd = cmdName;
-			setClearText(true);
-		} else {
-			// if saved command is binary perform it
-			Operation savedOp = Operations.INSTANCE.getOperation(cmd);
-			if (savedOp instanceof BinaryOperation) {
-				BinaryOperation bop = (BinaryOperation) savedOp;
-				newValue = bop.perform(value, curValue);
-			} // if current operation is unary perform it
-			else if (currentOp instanceof UnaryOperation) {
-				UnaryOperation uop = (UnaryOperation) currentOp;
-				newValue = uop.perform(curValue);
-			}
+        Operation currentOp = Operations.INSTANCE.getOperation(cmdName);
+        if ((currentOp instanceof BinaryOperation) && (cmd == null)) {
+            // if last clicked operation was binary and there is no saved
+            // operation, store it
+            cmd = cmdName;
+            setClearText(true);
+        } else {
+            // if saved command is binary perform it
+            Operation savedOp = Operations.INSTANCE.getOperation(cmd);
+            if (savedOp instanceof BinaryOperation) {
+                BinaryOperation bop = (BinaryOperation)savedOp;
+                newValue = bop.perform(value, curValue);
+            } // if current operation is unary perform it
+            else if (currentOp instanceof UnaryOperation) {
+                UnaryOperation uop = (UnaryOperation)currentOp;
+                newValue = uop.perform(curValue);
+            }
 
-			// display the result and prepare clear on next button
-			textProvider.setDisplayText("" + newValue);
-			setClearText(true);
-			if (currentOp instanceof Equals) {
-				// do not save "=" command
-				cmd = null;
-			} else if (currentOp instanceof BinaryOperation) {
-				// save binary commands as they are executed on next operation
-				cmd = cmdName;
-			} else {
-				// clear saved command
-				cmd = null;
-			}
-		}
+            // display the result and prepare clear on next button
+            textProvider.setDisplayText("" + newValue);
+            setClearText(true);
+            if (currentOp instanceof Equals) {
+                // do not save "=" command
+                cmd = null;
+            } else if (currentOp instanceof BinaryOperation) {
+                // save binary commands as they are executed on next operation
+                cmd = cmdName;
+            } else {
+                // clear saved command
+                cmd = null;
+            }
+        }
 
-	}
+    }
 
-	private boolean isCommand(String name) {
-		return (Operations.INSTANCE.getOperation(name) != null);
-	}
+    private boolean isCommand(String name) {
+        return (Operations.INSTANCE.getOperation(name) != null);
+    }
 
-	public void handleButtonClick(String str) {
-		if (isCommand(str)) {
-			calculate(str);
-		} else {
-			char digit = (str.toCharArray())[0];
-			if (Character.isDigit(digit) || digit == '.') {
-				if (clearText) {
-					// save current value and clear the display
-					value = Float.parseFloat(textProvider.getDisplayText());
-					textProvider.setDisplayText("");
-					setClearText(false);
-				}
+    public void handleButtonClick(String str) {
+        if (isCommand(str)) {
+            calculate(str);
+        } else {
+            char digit = (str.toCharArray())[0];
+            if (Character.isDigit(digit) || digit == '.') {
+                if (clearText) {
+                    // save current value and clear the display
+                    value = Float.parseFloat(textProvider.getDisplayText());
+                    textProvider.setDisplayText("");
+                    setClearText(false);
+                }
 
-				// add new digit to display
-				textProvider.setDisplayText(textProvider.getDisplayText() + digit);
-			}
-		}
-	}
+                // add new digit to display
+                textProvider.setDisplayText(textProvider.getDisplayText() + digit);
+            }
+        }
+    }
 
-	public void setClearText(boolean clearText) {
-		this.clearText = clearText;
-	}
+    public void setClearText(boolean clearText) {
+        this.clearText = clearText;
+    }
 }
