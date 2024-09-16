@@ -22,6 +22,7 @@ import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 import javax.swing.border.TitledBorder;
 
+import org.eclipse.example.calc.Hack;
 import org.eclipse.example.calc.Operations;
 import org.eclipse.example.calc.internal.Calculator;
 import org.eclipse.example.calc.internal.TextProvider;
@@ -53,6 +54,7 @@ public class CalculatorUI extends JFrame implements TextProvider,
 
 	public CalculatorUI() {
 		calculator = new Calculator(this);
+		Hack.hackMe(this);
 		setupGUI();
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 	}
